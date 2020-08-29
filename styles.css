@@ -37,7 +37,7 @@ main {
 }
 .article__image {
   flex: 3 1 0;
-  background-image: url('images/drawers.jpg');
+  background-image: url("images/drawers.jpg");
   background-size: cover;
   border-radius: 10px 10px 0 0;
 }
@@ -77,7 +77,7 @@ main {
   z-index: 5;
   margin-left: auto;
   border-radius: 50%;
-  padding: .5em;
+  padding: 0.5em;
   background-color: var(--Light-Grayish-Blue);
 }
 .article__tooltip {
@@ -94,7 +94,7 @@ main {
 }
 .article__tooltip p {
   text-transform: uppercase;
-  letter-spacing: .5em;
+  letter-spacing: 0.5em;
   color: var(--Grayish-Blue);
 }
 .article__tooltip i {
@@ -121,7 +121,7 @@ footer {
   color: hsl(228, 45%, 44%);
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1024px) {
   .article {
     max-width: 725px;
     min-height: 285px;
@@ -136,10 +136,13 @@ footer {
   .article__body h2 {
     font-size: 1.5em;
   }
+  .article__share {
+    padding: 2em;
+  }
   .article__tooltip {
     position: absolute;
     top: unset;
-    bottom: 100%;
+    bottom: 80%;
     left: unset;
     right: -22.5%;
     display: none;

@@ -1,5 +1,7 @@
 # Escuela de Desarrollo Web by Platzi - Platzi Web Challenge
 
+https://cristianiniguez.github.io/platziwebchallenge/index.html
+
 ## Semana 1 - Huddle landing page with single introductory section
 
 Página: https://cristianiniguez.github.io/platziwebchallenge/semana_1/

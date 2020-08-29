@@ -29,20 +29,29 @@ main {
 .article {
   background-color: #fff;
   border-radius: 10px;
-  overflow: hidden;
-  max-width: 333px;
+  /* overflow: hidden; */
+  max-width: 325px;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
 }
 .article__image {
-  width: 100%;
+  flex: 3 1 0;
+  background-image: url('images/drawers.jpg');
+  background-size: cover;
+  border-radius: 10px 10px 0 0;
+}
+.article__content {
+  flex: 4 1 0;
 }
 .article__body {
-  padding: 0 2em;
+  padding: 2em;
 }
 .article__body h2 {
   font-size: 1.3em;
 }
 .article__body p {
-  font-size: 1.1em;
+  font-size: 1.06em;
 }
 .article__share {
   position: relative;
@@ -80,6 +89,7 @@ main {
   display: none;
   background-color: var(--Very-Dark-Grayish-Blue);
   color: white;
+  border-radius: 0 0 10px 10px;
   padding: 1em 2em;
 }
 .article__tooltip p {
@@ -112,6 +122,34 @@ footer {
 }
 
 @media screen and (min-width: 1440px) {
+  .article {
+    max-width: 725px;
+    min-height: 285px;
+    flex-direction: row;
+  }
+  .article__image {
+    border-radius: 10px 0 0 10px;
+  }
+  .article__body {
+    padding: 2em 2em 0;
+  }
+  .article__body h2 {
+    font-size: 1.5em;
+  }
+  .article__tooltip {
+    position: absolute;
+    top: unset;
+    bottom: 100%;
+    left: unset;
+    right: -22.5%;
+    display: none;
+    border-radius: 10px;
+    padding: 0 2.5em;
+  }
+  .article__share--active .article__share-btn {
+    background-color: var(--Light-Grayish-Blue);
+    color: initial;
+  }
 }
 @media screen and (min-width: 375px) {
 }

@@ -58,6 +58,10 @@ footer a:hover {
   flex-grow: 1;
   padding: 0 1em;
 }
+.challenge__technologies {
+  font-size: 2em;
+  margin-bottom: .5em;
+}
 .challenge__links {
   display: flex;
 }
@@ -74,6 +78,16 @@ footer a:hover {
 .challenge a:hover {
   background-color: darkgray;
   color: white;
+}
+
+.fa-html5 {
+  color: #E44D26;
+}
+.fa-css3-alt {
+  color: #2277FF;
+}
+.fa-js {
+  color: #F7DF1E;
 }
 
 @media screen and (max-width: 1024px) {

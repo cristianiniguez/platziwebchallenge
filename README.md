@@ -17,3 +17,11 @@ Página: https://cristianiniguez.github.io/platziwebchallenge/semana_2/
 Repositorio: https://github.com/cristianiniguez/platziwebchallenge/tree/master/semana_2
 
 ![semana2_desktop-preview](./semana_2/design/desktop-preview.jpg)
+
+## Semana 3 - Four card feature section
+
+Página: https://cristianiniguez.github.io/platziwebchallenge/semana_3/
+
+Repositorio: https://github.com/cristianiniguez/platziwebchallenge/tree/master/semana_3
+
+![semana3_desktop-preview](./semana_3/design/desktop-preview.jpg)

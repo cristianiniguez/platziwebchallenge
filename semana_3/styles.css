@@ -86,4 +86,19 @@ footer {
 @media screen and (min-width: 375px) {
 }
 @media screen and (min-width: 1024px) {
+  .container {
+    max-width: 520px;
+  }
+  .cards-container {
+    max-width: 1024px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-auto-flow: column;
+    align-items: center;
+  }
+  .card--1,
+  .card--4 {
+    grid-row: span 2;
+  }
 }

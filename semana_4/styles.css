@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap');
+
+:root {
+  /* Prymary Colors */
+  --Dark-Blue: hsl(240, 38%, 20%);
+  --Grayish-Blue: hsl(240, 18%, 77%);
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  font-size: 17.5px;
+  background-image: url('./images/pattern-curve.svg');
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: 90%;
+}
+main {
+  padding: 2em;
+}
+
+.container {
+  max-width: 375px;
+  margin: 0 auto;
+}
+
+.slide__img-container {
+  position: relative;
+  background-image: url('./images/pattern-bg.svg');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 1rem;
+}
+.slide__img {
+  display: block;
+  width: 100%;
+  max-width: 250px;
+  max-height: 250px;
+  margin: 0 auto;
+  box-shadow: 0 15px 15px rgba(0, 0, 0, .2);
+}
+.slide__controls {
+  position: absolute;
+  bottom: 0;
+  left: 40%;
+  display: flex;
+  border-radius: 17.5px;
+  overflow: hidden;
+}
+.slide__btn {
+  display: block;
+  background-color: white;
+  border: none;
+  padding: .75em 1em;
+}
+.slide__btn img {
+  height: 15px;
+  display: block;
+}
+
+.slide__description {
+  text-align: center;
+  background-image: url('./images/pattern-quotes.svg');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 20%;
+  margin: 1.5em 0;
+  padding: .5em 0;
+}
+.slide__testimony {
+  font-weight: 300;
+}
+.slide__author {
+  font-size: .8em;
+  font-weight: 700;
+  color: var(--Dark-Blue);
+  margin-bottom: 0;
+}
+.slide__author-profession {
+  font-size: .8em;
+  font-weight: 500;
+  color: var(--Grayish-Blue);
+  margin-top: 0;
+}
+
+@media screen and (min-width: 375px) {
+
+}
+@media screen and (min-width: 1440px) {
+
+}

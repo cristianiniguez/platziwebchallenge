@@ -61,6 +61,13 @@ main {
   background-color: white;
   border: none;
   padding: 0.75em 1em;
+  outline: none;
+}
+.slide__btn:hover {
+  background-color: #F2F3F4;
+}
+.slide__btn:active {
+  background-color: #D5DBDB;
 }
 .slide__btn img {
   height: 15px;

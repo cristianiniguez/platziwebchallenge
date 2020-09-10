@@ -3,6 +3,11 @@ const $testimony = document.getElementById('slide-testimony')
 const $author = document.getElementById('slide-author')
 const $profession = document.getElementById('slide-profession')
 
+const $btnPrev = document.getElementById('btn-previous')
+const $btnNext = document.getElementById('btn-next')
+
+let currentSlide = 0
+
 const SLIDES = [
   {
     imgSrc: 'images/image-tanya.jpg',
@@ -19,3 +24,43 @@ const SLIDES = [
     profession: 'Junior Front-end Developer'
   }
 ]
+
+function nextSlide() {
+  if (SLIDES[currentSlide + 1]) {
+    currentSlide++
+    renderSlide(currentSlide)
+  }
+}
+
+function previousSlide() {
+  if (SLIDES[currentSlide - 1]) {
+    currentSlide--
+    renderSlide(currentSlide)
+  }
+}
+
+function renderSlide(n) {
+  const slide = SLIDES[n]
+  $image.src = slide.imgSrc
+  $image.alt = slide.imgAlt
+  $testimony.innerText = slide.testimony
+  $author.innerText = slide.author
+  $profession.innerText = slide.profession
+}
+
+window.addEventListener('load', () => {
+  currentSlide = 0
+  renderSlide(currentSlide)
+})
+
+$btnPrev.addEventListener('click', previousSlide)
+$btnNext.addEventListener('click', nextSlide)
+
+window.addEventListener('keyup', e => {
+  const key = e.key
+  if (key === 'ArrowRight') {
+    nextSlide()
+  } else if (key === 'ArrowLeft') {
+    previousSlide()
+  }
+})

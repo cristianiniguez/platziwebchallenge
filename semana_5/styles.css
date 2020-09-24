@@ -13,7 +13,7 @@
 
 body {
   margin: 0;
-  background-image: url('images/bg-mobile.png');
+  background-image: url("images/bg-mobile.png");
   background-size: cover;
   background-repeat: no-repeat;
   font-size: 14px;
@@ -25,7 +25,7 @@ body {
 }
 main {
   flex-grow: 1;
-  padding: 6em .5em;
+  padding: 6em 0.5em;
 }
 
 .component__header,
@@ -65,7 +65,7 @@ main {
 .component__tooltip {
   position: absolute;
   top: 80%;
-  left: 22.5%;
+  left: calc(50% - 100px);
   background-color: white;
   width: 200px;
   color: var(--Grayish-Blue);
@@ -79,8 +79,21 @@ main {
   color: var(--Very-Dark-Blue);
 }
 
-.range input {
+.range__progress {
   width: 100%;
+  height: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.range__progress::-webkit-progress-bar {
+  background-color: var(--Very-Dark-Blue);
+  padding: 2px;
+}
+.range__progress::-webkit-progress-value {
+  background: var(--Gradient);
+  border-radius: 10px;
 }
 .range__labels {
   display: flex;

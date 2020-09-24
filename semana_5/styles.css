@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+
+:root {
+  /* Colors */
+  /* Primary */
+  --Gradient: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+  /* Neutral */
+  --Pale-Blue: hsl(243, 100%, 93%);
+  --Grayish-Blue: hsl(229, 7%, 55%);
+  --Dark-Blue: hsl(228, 56%, 26%);
+  --Very-Dark-Blue: hsl(229, 57%, 11%);
+}
+
+body {
+  margin: 0;
+  background-image: url('images/bg-mobile.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-size: 14px;
+  font-family: "Raleway", sans-serif;
+  color: var(--Pale-Blue);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+main {
+  flex-grow: 1;
+  padding: 6em .5em;
+}
+
+.component__header,
+.component__body {
+  background-color: var(--Dark-Blue);
+  margin: 1em;
+  padding: 3em;
+  border-radius: 10px;
+}
+.component__header {
+  border-top-right-radius: 100px;
+}
+.component__buttons {
+  margin-top: 2em;
+  display: flex;
+}
+.component__buttons a {
+  background-color: var(--Very-Dark-Blue);
+  width: 50px;
+  height: 50px;
+  margin-right: 1em;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.component__body {
+  padding-top: 1em;
+  position: relative;
+}
+.component__message {
+  text-align: center;
+}
+.component__message span {
+  font-weight: bold;
+}
+.component__tooltip {
+  position: absolute;
+  top: 80%;
+  left: 22.5%;
+  background-color: white;
+  width: 200px;
+  color: var(--Grayish-Blue);
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 10px;
+}
+.component__tooltip span {
+  font-size: 3em;
+  color: var(--Very-Dark-Blue);
+}
+
+.range input {
+  width: 100%;
+}
+.range__labels {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+footer {
+  padding: 1em;
+}
+
+@media screen and (min-width: 375px) {
+}
+@media screen and (min-width: 1440px) {
+}

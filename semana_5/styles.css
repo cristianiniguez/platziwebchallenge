@@ -26,16 +26,28 @@ body {
 main {
   flex-grow: 1;
   padding: 6em 0.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.container {
+  max-width: 375px;
+  margin: 0 auto;
+}
+
+.component {
+  display: flex;
+  flex-direction: column;
+}
 .component__header,
 .component__body {
   background-color: var(--Dark-Blue);
-  margin: 1em;
   padding: 3em;
   border-radius: 10px;
 }
 .component__header {
+  margin: 0 0 1em;
   border-top-right-radius: 100px;
 }
 .component__buttons {
@@ -116,4 +128,45 @@ footer {
 @media screen and (min-width: 375px) {
 }
 @media screen and (min-width: 1440px) {
+  body {
+    background-color: var(--Very-Dark-Blue);
+    background-image: url("images/bg-desktop.png");
+    background-position: 0 50vh;
+  }
+  main {
+    padding: 1em;
+  }
+  .container {
+    max-width: unset;
+    width: 1024px;
+  }
+  .component {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+  .component__header {
+    margin: 0 1em 0 0;
+    padding-right: 8em;
+  }
+  .component__body {
+    flex-grow: 1;
+  }
+  .component__message {
+    text-align: left;
+  }
+  .component__tooltip {
+    top: unset;
+    left: unset;
+    right: 3em;
+    bottom: 80%;
+    border-bottom-right-radius: 0;
+  }
+  .component__tooltip::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    border-top: 15px solid white;
+    border-left: 15px solid transparent;
+    box-sizing: border-box;
+  }
 }

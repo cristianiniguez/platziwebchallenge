@@ -1,3 +1,4 @@
+// Global variables
 const IMAGES = [
   {
     mobileImg: 'images/mobile-image-hero-1.jpg',
@@ -18,3 +19,23 @@ const IMAGES = [
     content: 'Our modern furniture store provide a high level of quality. Our company has invested in advanced technology to ensure that every product is made as perfect and as consistent as possible. With three decades of experience in this industry, we understand what customers want for their home and office.'
   }
 ]
+const NAV_MENU_BTN_IMG = [
+  'images/icon-hamburger.svg',
+  'images/icon-close.svg'
+]
+let currentNavMenuBtnImg = 0
+
+// Elements
+const $header = document.querySelector('header')
+const $navMenuBtn = document.getElementById('nav-menu-btn')
+
+// Events
+$navMenuBtn.addEventListener('click', () => {
+  $header.classList.toggle('menu--shown')
+  if (NAV_MENU_BTN_IMG[currentNavMenuBtnImg + 1]) {
+    currentNavMenuBtnImg++
+  } else {
+    currentNavMenuBtnImg--
+  }
+  $navMenuBtn.src = NAV_MENU_BTN_IMG[currentNavMenuBtnImg]
+})

@@ -126,4 +126,48 @@ header.menu--shown .nav-menu {
 @media screen and (min-width: 375px) {
 }
 @media screen and (min-width: 1440px) {
+  .nav {
+    justify-content: flex-start;
+    padding: 0 5em;
+  }
+  .nav-menu__btn {
+    display: none;
+  }
+  .nav-menu {
+    position: static;
+    width: auto;
+    display: flex;
+    background-color: transparent;
+  }
+  .nav-menu__item a {
+    color: var(--White);
+  }
+  .hero,
+  .about {
+    display: flex;
+  }
+  .hero__image {
+    flex: 8 0 0;
+  }
+  .hero__content {
+    padding: 8em 10em;
+    flex: 4 0 0;
+  }
+  .hero__title {
+    font-size: 3em;
+  }
+  .hero__buttons {
+    right: -30%;
+    left: 100%;
+  }
+  .hero__btn {
+    padding: 3em 3.75em;
+  }
+  .about__image {
+    flex: 5 0 0;
+  }
+  .about__content {
+    padding: 5em;
+    flex: 6 0 0;
+  }
 }

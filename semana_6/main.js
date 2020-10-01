@@ -4,7 +4,7 @@ const HERO_IMAGES = [
     mobileImg: 'images/mobile-image-hero-1.jpg',
     desktopImg: 'images/desktop-image-hero-1.jpg',
     title: 'Discover innovative ways to decorate',
-    content: 'We provide unmatched quality, comfort, and style for property owners across the country. Our experts combine form andnfunction in bringing your vision to life. Create a room in your own style with our collection and make your property a reflection of you and what you love.'
+    content: 'We provide unmatched quality, comfort, and style for property owners across the country. Our experts combine form and function in bringing your vision to life. Create a room in your own style with our collection and make your property a reflection of you and what you love.'
   },
   {
     mobileImg: 'images/mobile-image-hero-2.jpg',
@@ -43,7 +43,7 @@ function setHeroImage(n) {
   if (HERO_IMAGES[n]) {
     currentHeroImg = n
     const heroImg = HERO_IMAGES[currentHeroImg]
-    $heroImg.src = heroImg.mobileImg
+    $heroImg.src = heroImg.desktopImg
     $heroTitle.innerText = heroImg.title
     $heroContent.innerText = heroImg.content
   }

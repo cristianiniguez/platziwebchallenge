@@ -126,6 +126,10 @@ header.menu--shown .nav-menu {
 @media screen and (min-width: 375px) {
 }
 @media screen and (min-width: 1440px) {
+  header.menu--shown {
+    background-color: transparent;
+    height: auto;
+  }
   .nav {
     justify-content: flex-start;
     padding: 0 5em;
@@ -150,7 +154,7 @@ header.menu--shown .nav-menu {
     flex: 8 0 0;
   }
   .hero__content {
-    padding: 8em 10em;
+    padding: 7.5em 10em;
     flex: 4 0 0;
   }
   .hero__title {

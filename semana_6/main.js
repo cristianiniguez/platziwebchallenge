@@ -27,6 +27,8 @@ const NAV_MENU_BTN_IMG = [
 ]
 let currentNavMenuBtnImg = 0
 
+let isMobile = true
+
 // Elements
 const $header = document.querySelector('header')
 const $navMenuBtn = document.getElementById('nav-menu-btn')
@@ -43,10 +45,15 @@ function setHeroImage(n) {
   if (HERO_IMAGES[n]) {
     currentHeroImg = n
     const heroImg = HERO_IMAGES[currentHeroImg]
-    $heroImg.src = heroImg.desktopImg
+    $heroImg.src = isMobile ? heroImg.mobileImg : heroImg.desktopImg
     $heroTitle.innerText = heroImg.title
     $heroContent.innerText = heroImg.content
   }
+}
+
+function readMedia() {
+  isMobile = !window.matchMedia("(min-width: 1440px)").matches
+  setHeroImage(currentHeroImg)
 }
 
 // Events
@@ -67,6 +74,6 @@ $heroNextBtn.addEventListener('click', () => {
   setHeroImage(currentHeroImg + 1)
 })
 
-window.addEventListener('load', () => {
-  setHeroImage(0)
-})
+window.addEventListener('load', readMedia)
+
+window.matchMedia("(min-width: 1440px)").onchange = readMedia

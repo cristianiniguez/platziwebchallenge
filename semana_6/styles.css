@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700&display=swap");
+
+:root {
+  /* Colors */
+  /* Primary */
+  --Dark-Gray: hsl(0, 0%, 63%);
+  --Black: hsl(0, 0%, 0%);
+  --White: hsl(0, 0%, 100%);
+  --Very-Dark-Gray: hsl(0, 0%, 27%);
+}
+
+body {
+  margin: 0;
+  font-size: 12px;
+  font-family: "Spartan", sans-serif;
+}
+header {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+figure {
+  margin: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+.nav {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+.nav-menu__btn {
+  position: absolute;
+  left: 0;
+  margin: 2em;
+}
+
+.hero__image img,
+.about__image img {
+  width: 100%;
+  display: block;
+}
+.hero__content,
+.about__content {
+  padding: 4em 2.1em;
+}
+.hero__content p,
+.about__content p {
+  color: var(--Dark-Gray);
+  line-height: 1.5em;
+}
+
+.hero__image {
+  position: relative;
+}
+.hero__buttons {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+}
+.hero__btn {
+  border: none;
+  outline: none;
+  background-color: var(--Black);
+  padding: 1.25em 1.75em;
+}
+.hero__btn:hover {
+  background-color: var(--Very-Dark-Gray);
+}
+.hero__title {
+  font-size: 2.1em;
+}
+.hero__link {
+  margin: 3em 0;
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 4px;
+  display: flex;
+  align-items: center;
+}
+.hero__link img {
+  margin-left: 2em;
+}
+
+.about__title {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+@media screen and (min-width: 375px) {
+}
+@media screen and (min-width: 1440px) {
+}

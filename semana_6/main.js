@@ -1,5 +1,5 @@
 // Global variables
-const IMAGES = [
+const HERO_IMAGES = [
   {
     mobileImg: 'images/mobile-image-hero-1.jpg',
     desktopImg: 'images/desktop-image-hero-1.jpg',
@@ -19,6 +19,8 @@ const IMAGES = [
     content: 'Our modern furniture store provide a high level of quality. Our company has invested in advanced technology to ensure that every product is made as perfect and as consistent as possible. With three decades of experience in this industry, we understand what customers want for their home and office.'
   }
 ]
+let currentHeroImg = 0
+
 const NAV_MENU_BTN_IMG = [
   'images/icon-hamburger.svg',
   'images/icon-close.svg'
@@ -29,6 +31,24 @@ let currentNavMenuBtnImg = 0
 const $header = document.querySelector('header')
 const $navMenuBtn = document.getElementById('nav-menu-btn')
 
+const $heroImg = document.getElementById('hero-img')
+const $heroTitle = document.getElementById('hero-title')
+const $heroContent = document.getElementById('hero-content')
+
+const $heroPrevBtn = document.getElementById('hero-prev-btn')
+const $heroNextBtn = document.getElementById('hero-next-btn')
+
+// Functions
+function setHeroImage(n) {
+  if (HERO_IMAGES[n]) {
+    currentHeroImg = n
+    const heroImg = HERO_IMAGES[currentHeroImg]
+    $heroImg.src = heroImg.mobileImg
+    $heroTitle.innerText = heroImg.title
+    $heroContent.innerText = heroImg.content
+  }
+}
+
 // Events
 $navMenuBtn.addEventListener('click', () => {
   $header.classList.toggle('menu--shown')
@@ -38,4 +58,15 @@ $navMenuBtn.addEventListener('click', () => {
     currentNavMenuBtnImg--
   }
   $navMenuBtn.src = NAV_MENU_BTN_IMG[currentNavMenuBtnImg]
+})
+
+$heroPrevBtn.addEventListener('click', () => {
+  setHeroImage(currentHeroImg - 1)
+})
+$heroNextBtn.addEventListener('click', () => {
+  setHeroImage(currentHeroImg + 1)
+})
+
+window.addEventListener('load', () => {
+  setHeroImage(0)
 })

@@ -18,7 +18,6 @@ body {
 header {
   position: absolute;
   width: 100%;
-  height: 100%;
   z-index: 1;
 }
 figure {
@@ -27,6 +26,7 @@ figure {
 
 header.menu--shown {
   background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
 }
 
 header.menu--shown .nav-menu {

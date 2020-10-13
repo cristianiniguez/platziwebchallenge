@@ -11,16 +11,13 @@
   --YouTube: hsl(348, 97%, 39%);
   /* Dark Theme */
   --Toggle-Dark-Theme: linear-gradient(90deg, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
-  /* Light Theme */
-  --Toggle-Light-Theme: hsl(230, 22%, 74%);
-  /* Neutral */
-  /* Dark Theme */
   --Very-Dark-Blue-BG: hsl(230, 17%, 14%);
   --Very-Dark-Blue-Top-BG-Pattern: hsl(232, 19%, 15%);
   --Dark-Desaturated-Blue-Card-BG: hsl(228, 28%, 20%);
   --Desaturated-Blue-Text: hsl(228, 34%, 66%);
   --White-Text: hsl(0, 0%, 100%);
   /* Light Theme */
+  --Toggle-Light-Theme: hsl(230, 22%, 74%);
   --White--BG: hsl(0, 0%, 100%);
   --Very-Pale-Blue-Top-BG-Pattern: hsl(225, 100%, 98%);
   --Light-Grayish-Blue-Card-BG: hsl(227, 47%, 96%);
@@ -57,8 +54,8 @@ header {
   padding: 0 2em;
 }
 main {
-  padding: 1em 2em;
-  margin-top: -3em;
+  padding: 2em;
+  margin-top: -4em;
 }
 
 .container {
@@ -180,11 +177,51 @@ main {
 .status-card__followers-diff img {
   margin-right: 0.5em;
 }
-.status-card__followers-diff--up {
+.status-card__followers-diff--up,
+.overview-card__diff--up {
   color: var(--Lime-Green);
 }
-.status-card__followers-diff--down {
+.status-card__followers-diff--down,
+.overview-card__diff--down {
   color: var(--Bright-Red);
+}
+
+.overview__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5em;
+}
+.overview-card {
+  background-color: var(--card-bg);
+  border-radius: 10px;
+  padding: 1.5em;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  grid-auto-flow: column;
+  align-items: start;
+  gap: 1em;
+}
+.overview-card__label {
+  color: var(--title-color);
+  font-weight: 700;
+}
+.overview-card__number {
+  font-size: 2em;
+  font-weight: 700;
+}
+.overview-card__icon {
+  justify-self: end;
+}
+.overview-card__diff {
+  justify-self: end;
+  align-self: end;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+.overview-card__diff img {
+  margin-right: 0.25em;
 }
 
 @media screen and (min-width: 375px) {

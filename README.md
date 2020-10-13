@@ -50,7 +50,7 @@ Repositorio: https://github.com/cristianiniguez/platziwebchallenge/tree/master/s
 
 ![semana6_desktop-preview](./semana_6/design/desktop-preview.jpg)
 
-## Semana 7 - Room homepage
+## Semana 7 - Social media dashboard with theme switcher
 
 Página: https://cristianiniguez.github.io/platziwebchallenge/semana_7/
 

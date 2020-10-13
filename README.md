@@ -49,3 +49,11 @@ Página: https://cristianiniguez.github.io/platziwebchallenge/semana_6/
 Repositorio: https://github.com/cristianiniguez/platziwebchallenge/tree/master/semana_6
 
 ![semana6_desktop-preview](./semana_6/design/desktop-preview.jpg)
+
+## Semana 7 - Room homepage
+
+Página: https://cristianiniguez.github.io/platziwebchallenge/semana_7/
+
+Repositorio: https://github.com/cristianiniguez/platziwebchallenge/tree/master/semana_7
+
+![semana7_desktop-preview](./semana_7/design/desktop-preview.jpg)

@@ -186,6 +186,9 @@ main {
   color: var(--Bright-Red);
 }
 
+.overview__title {
+  color: var(--title-color);
+}
 .overview__grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -227,4 +230,30 @@ main {
 @media screen and (min-width: 375px) {
 }
 @media screen and (min-width: 1440px) {
+  main {
+    margin-top: -10em;
+  }
+  .container {
+    max-width: 1140px;
+  }
+  .header {
+    padding-bottom: 10em;
+  }
+  .header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header__title-container {
+    font-size: 1.5em;
+    border-bottom: none;
+  }
+  .switch__btn {
+    margin-left: 1em;
+  }
+  .status,
+  .overview__grid {
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 4em;
+  }
 }

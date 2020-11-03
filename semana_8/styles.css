@@ -24,6 +24,52 @@ body {
   margin: 0 auto;
 }
 
+.filters {
+  display: none;
+  position: relative;
+  padding: 1em;
+  margin-top: -4em;
+  z-index: 2;
+}
+.filters--shown {
+  display: block;
+}
+.filters__container {
+  padding: 1em;
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.filter {
+  display: inline-block;
+  background-color: var(--Light-Grayish-Cyan--Background);
+  color: var(--Dark-Grayish-Cyan);
+  font-weight: 700;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 0.5em 0.5em 0.5em 0;
+}
+.filter__wrapper {
+  display: flex;
+  align-items: stretch;
+}
+.filter__label {
+  display: inline-block;
+  padding: 0.5em;
+}
+.filter__btn {
+  border: none;
+  outline: none;
+  border-radius: none;
+  background-color: var(--Dark-Grayish-Cyan);
+  color: white;
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
 .jobs {
   padding: 3em 1em 1em;
 }

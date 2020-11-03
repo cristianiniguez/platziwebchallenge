@@ -1,3 +1,5 @@
+let filters = [];
+
 const $jobsContainer = document.getElementById('jobs-container');
 
 async function getData() {
@@ -10,7 +12,7 @@ async function getData() {
   loadJobs(jobs);
 }
 
-function loadJobs(jobs, filters = null) {
+function loadJobs(jobs) {
   $jobsContainer.innerHTML = jobs.map((job) => article(job)).join('');
 }
 
@@ -31,7 +33,7 @@ function article(data) {
       </p>
       <hr />
       <p class="job__tags">
-        ${data.tags.map((tag) => `<span>${tag}</span>`).join('')}
+        ${data.tags.map((tag) => `<span class="job__tag">${tag}</span>`).join('')}
       </p>
     </article>
   `;

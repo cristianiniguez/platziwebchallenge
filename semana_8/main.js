@@ -16,12 +16,12 @@ function loadJobs(jobs, filters = null) {
 
 function article(data) {
   return `
-    <article class="job ${data.featured && 'job--featured'}" id="${data.id}">
+    <article class="job ${data.featured ? 'job--featured' : ''}" id="${data.id}">
       <img class="job__logo" src="${data.logo}" alt="${data.company}" />
       <p class="job__company">
         ${data.company}
-        ${data.new && '<span class="job__new">New!</span>'}
-        ${data.featured && '<span class="job__featured">Featured</span>'}
+        ${data.new ? '<span class="job__new">New!</span>' : ''}
+        ${data.featured ? '<span class="job__featured">Featured</span>' : ''}
       </p>
       <p class="job__position">${data.position}</p>
       <p class="job__details">

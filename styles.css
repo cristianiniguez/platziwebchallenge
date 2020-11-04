@@ -14,7 +14,7 @@ header {
   padding: 1rem;
 }
 main {
-  padding: 0 1rem;
+  padding: 0 3rem;
   flex-grow: 1;
 }
 footer {
@@ -36,7 +36,7 @@ footer a:hover {
   margin: 0 auto;
 }
 .grid-container {
-  padding: 1rem 0;
+  padding: 3rem 0;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
@@ -44,15 +44,20 @@ footer a:hover {
 .challenge {
   border: 1px solid gray;
   border-radius: 10px;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, .5);
   overflow: hidden;
   text-align: center;
   display: flex;
   flex-direction: column;
+  transition: 0.5s ease;
+}
+.challenge:hover {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
 .challenge img {
   display: block;
   width: 100%;
+  height: 130px;
+  object-fit: cover;
 }
 .challenge__description {
   flex-grow: 1;
@@ -60,7 +65,10 @@ footer a:hover {
 }
 .challenge__technologies {
   font-size: 2em;
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
+}
+.challenge__technologies i {
+  margin: 0 0.25em;
 }
 .challenge__links {
   display: flex;
@@ -70,10 +78,9 @@ footer a:hover {
   display: inline-block;
   background-color: lightgray;
   color: black;
-  /* margin-bottom: 1em; */
-  /* border-radius: 5px; */
-  padding: .5em;
+  padding: 0.5em;
   text-decoration: none;
+  transition: 0.3s ease;
 }
 .challenge a:hover {
   background-color: darkgray;
@@ -81,13 +88,13 @@ footer a:hover {
 }
 
 .fa-html5 {
-  color: #E44D26;
+  color: #e44d26;
 }
 .fa-css3-alt {
-  color: #2277FF;
+  color: #2277ff;
 }
 .fa-js {
-  color: #F7DF1E;
+  color: #f7df1e;
 }
 
 @media screen and (max-width: 1024px) {
@@ -114,4 +121,3 @@ footer a:hover {
     grid-template-columns: 1fr;
   }
 }
-@media screen and (max-width: 320px) {}

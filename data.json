@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "img": "desktop-design.jpg",
+    "title": "Huddle landing page with single introductory section",
+    "technologies": ["html", "css"]
+  },
+  {
+    "id": 2,
+    "img": "desktop-design.jpg",
+    "title": "Article preview component",
+    "technologies": ["html", "css", "js"]
+  },
+  {
+    "id": 3,
+    "img": "desktop-design.jpg",
+    "title": "Four card feature section",
+    "technologies": ["html", "css", "js"]
+  },
+  {
+    "id": 4,
+    "img": "desktop-design-slide-1.jpg",
+    "title": "Huddle landing page with single introductory section",
+    "technologies": ["html", "css", "js"]
+  },
+  {
+    "id": 5,
+    "img": "desktop-design.jpg",
+    "title": "Fylo data storage component",
+    "technologies": ["html", "css"]
+  },
+  {
+    "id": 6,
+    "img": "desktop-design-slide-1.jpg",
+    "title": "Room homepage",
+    "technologies": ["html", "css", "js"]
+  },
+  {
+    "id": 7,
+    "img": "desktop-design-light.jpg",
+    "title": "Social media dashboard with theme switcher",
+    "technologies": ["html", "css", "js"]
+  },
+  {
+    "id": 8,
+    "img": "desktop-design.jpg",
+    "title": "Job Listings Challenge",
+    "technologies": ["html", "css", "js"]
+  }
+]

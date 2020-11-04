@@ -57,3 +57,11 @@ Página: https://cristianiniguez.github.io/platziwebchallenge/semana_7/
 Repositorio: https://github.com/cristianiniguez/platziwebchallenge/tree/master/semana_7
 
 ![semana7_desktop-preview](./semana_7/design/desktop-preview.jpg)
+
+## Semana 8 - Job Listings Challenge
+
+Página: https://cristianiniguez.github.io/platziwebchallenge/semana_8/
+
+Repositorio: https://github.com/cristianiniguez/platziwebchallenge/tree/master/semana_8
+
+![semana8_desktop-preview](./semana_8/design/desktop-preview.jpg)

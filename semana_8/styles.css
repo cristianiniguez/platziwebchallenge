@@ -76,6 +76,19 @@ header img {
   color: white;
   font-weight: 700;
   font-size: 1.5em;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.filter__btn:hover {
+  background-color: black;
+}
+.filters__clear-btn {
+  font-weight: 700;
+  color: var(--Dark-Grayish-Cyan);
+  cursor: pointer;
+}
+.filters__clear-btn:hover {
+  text-decoration: underline;
 }
 
 .jobs {
@@ -91,6 +104,7 @@ header img {
   padding: 2em 1em 0;
   border-radius: 10px;
   position: relative;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 .job--featured {
   border-left: 5px solid var(--Desaturated-Dark-Cyan);
@@ -124,6 +138,9 @@ header img {
   font-weight: 700;
   font-size: 1.2em;
 }
+.job:hover .job__position {
+  color: var(--Desaturated-Dark-Cyan);
+}
 .job__details {
   color: var(--Dark-Grayish-Cyan);
 }
@@ -138,6 +155,12 @@ header img {
   padding: 0.5em;
   border-radius: 5px;
   margin: 0.5em 0.5em 0.5em 0;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.job__tag:hover {
+  background-color: var(--Desaturated-Dark-Cyan);
+  color: var(--Light-Grayish-Cyan--Background);
 }
 
 @media screen and (min-width: 375px) {
